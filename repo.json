@@ -1,0 +1,8 @@
+{
+  "name": "Kendi Repom",
+  "description": "Kişisel CloudStream eklenti reposu",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/kullaniciadi/cs-repo/builds/plugins.json"
+  ]
+}
