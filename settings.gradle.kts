@@ -3,8 +3,8 @@ rootProject.name = "KendiRepo"
 // This file sets what projects are included.
 // All new projects should get automatically included unless specified in the "disabled" variable.
 
-// Sablon sadece yeni eklenti oluşturmak için var; GitHub'da derlenip yayınlanmaz.
-val disabled = if (System.getenv("CI") != null) listOf("Sablon") else listOf()
+// Sablon sadece yeni eklenti olusturmak icin var; hicbir zaman yayinlanmaz.
+val disabled = listOf("Sablon")
 
 File(rootDir, ".").eachDir { dir ->
     if (!disabled.contains(dir.name) && File(dir, "build.gradle.kts").exists()) {

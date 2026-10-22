@@ -1,15 +1,16 @@
-// Sürüm numarası tam sayı olmalı. Eklentide değişiklik yaptıkça artır,
-// yoksa uygulama güncellemeyi görmez.
-version = 1
+// Surum numarasi tam sayi olmali. Eklentide degisiklik yaptikca artir,
+// yoksa uygulama guncellemeyi gormez.
+version = 2
 
 cloudstream {
-    description = "yabancidizi.news"
-    language = "tr"
+    authors     = listOf("beyazsapka")
+    description = "YabanciDizi - yabanci dizi ve film izleme"
+    language    = "tr"
 
     /**
-     * 0: Çalışmıyor, 1: Çalışıyor, 2: Yavaş, 3: Sadece beta
+     * 0: Calismiyor, 1: Calisiyor, 2: Yavas, 3: Sadece beta
      */
-    status = 1
+    status = 3
 
     // Movie, TvSeries, Anime, AsianDrama, Documentary, Live ...
     tvTypes = listOf("Movie", "TvSeries")

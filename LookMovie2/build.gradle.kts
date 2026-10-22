@@ -1,13 +1,14 @@
-// Sürüm numarası tam sayı olmalı. Eklentide değişiklik yaptıkça artır,
-// yoksa uygulama güncellemeyi görmez.
-version = 1
+// Surum numarasi tam sayi olmali. Eklentide degisiklik yaptikca artir,
+// yoksa uygulama guncellemeyi gormez.
+version = 2
 
 cloudstream {
-    description = "www.lookmovie2.to"
-    language = "tr"
+    authors     = listOf("beyazsapka")
+    description = "LookMovie2 - ucretsiz film ve dizi izleme (m3u8 + altyazi)"
+    language    = "en"
 
     /**
-     * 0: Çalışmıyor, 1: Çalışıyor, 2: Yavaş, 3: Sadece beta
+     * 0: Calismiyor, 1: Calisiyor, 2: Yavas, 3: Sadece beta
      */
     status = 1
 
