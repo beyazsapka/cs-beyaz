@@ -5,7 +5,7 @@
 Repo adresi:
 
 ```
-https://raw.githubusercontent.com/beyazsapka/cs-beyaz/builds/plugins.json
+https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/plugins.json
 ```
 
 CloudStream > **Ayarlar > Eklentiler > Repo ekle** yolundan yukarıdaki adresi ekleyin.
@@ -14,6 +14,27 @@ CloudStream > **Ayarlar > Eklentiler > Repo ekle** yolundan yukarıdaki adresi e
 ```
 https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/repo.json
 ```
+
+### Tek tık / kısa bağlantı
+
+Android'de tıklayınca CloudStream'in açılması için:
+
+```
+cloudstreamrepo://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/repo.json
+```
+
+Ayrıca CloudStream, başında `http` olmayan ve yalnızca `a-z A-Z 0-9 ! _ -`
+karakterlerinden oluşan girdileri **kısa kod** olarak çözer:
+
+- `cutt.ly/<kod>` adresinin `repo.json`'a yönlendirmesi gerekir.
+  Uygulamada **Depo ismi** alanını boş bırakıp **Depo URL'si** alanına sadece
+  `<kod>` yazın (ör. `beyazcs` → `https://cutt.ly/beyazcs`).
+- `!` ile başlayan kodlar `https://py.md/<kod>` üzerinden çözülür.
+
+Kendi kısa kodunuzu oluşturmak için: cutt.ly'de hesap açıp
+`https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/repo.json`
+adresini kısaltın, özel takma ad olarak `beyazcs` gibi bir değer seçin.
+Tarayıcıda `https://cutt.ly/beyazcs` açıldığında doğrudan JSON görünmelidir.
 
 ---
 
@@ -27,6 +48,8 @@ https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/repo.json
 | [FullHDFilmizlesene](FullFilmIzlesene) | Film | ⚠️ Kısmi | Film bilgileri geliyor; kaynak `rapidvid` Cloudflare arkasında olduğu için bazı filmlerde link gelmeyebilir. |
 | [YabanciDizi](YabanciDizi) | Film + Dizi | ⚠️ Beta | Arama ve bölüm listesi çalışıyor; oynatıcı AJAX'ı zaman aşımına uğrayabilir. |
 | [FilmBoxIzle](FilmBoxIzle) | Film | ⚠️ Beta | hotstream AES yapılandırması çözülüyor; CDN otomatik istekleri bazen reddediyor. |
+| [DiziBox](DiziBox) | Yabancı Dizi | ✅ Çalışıyor | Bölüm listesi, arama ve `king`/`moly`/`haydi` oynatıcı zinciri (CryptoJS AES + VidMoly/OK.ru). |
+| [HDFilmIzle](HDFilmIzle) | Film + Dizi | ✅ Çalışıyor | CSRF korumalı arama, Vidrame oynatıcısı (XOR çözücü) ve dizi bölümleri. |
 
 > "Çalışıyor" = site HTML/API'si ve oynatıcı zinciri test edildi, eklenti derleniyor.
 > Uygulama içi son test cihazda yapılmalıdır; siteler sık sık yapı değiştirir.
@@ -100,15 +123,20 @@ adb shell appops set --uid com.lagradost.cloudstream3 MANAGE_EXTERNAL_STORAGE al
 
 Prerelease sürümde paket adı: `com.lagradost.cloudstream3.prerelease`
 
-### GitHub Actions
+### Yayınlama (GitHub Actions'a gerek yok)
 
-Push sonrası `.github/workflows/build.yml` çalışır ve `builds` dalına şunları yazar:
+Repo, `master` dalındaki hazır dosyaları kullanır:
 
-- `*.cs3` eklenti dosyaları
-- `plugins.json` repo manifesti
+- `plugins/*.cs3` — derlenmiş eklentiler
+- `plugins.json` — eklenti manifesti
+- `repo.json` — CloudStream'in eklediği repo tanımı
 
-Repo > Settings > Actions > General > **Workflow permissions** ayarının
-*Read and write* olduğundan emin olun.
+`./gradlew make makePluginsJson` sonrası `.cs3` dosyalarını `plugins/` klasörüne
+kopyalayıp `plugins.json` içindeki adresleri `master/plugins/...` olacak şekilde
+güncellemek yeterlidir.
+
+`.github/workflows/build.yml` ise (Actions etkinse) ayrıca `builds` dalına
+derlenmiş paketleri yazar; repo için zorunlu değildir.
 
 ---
 

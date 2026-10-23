@@ -1,0 +1,167 @@
+[
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dizibox.live&sz=%size%",
+        "fileHash": "sha256-ccd2fd13c9362ca12544980032edf8f0ca92cdf5c62a084dcbe525a8cd70733e",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/beyazsapka/cs-beyaz",
+        "fileSize": 27467,
+        "status": 1,
+        "language": "tr",
+        "authors": [
+            "beyazsapka"
+        ],
+        "tvTypes": [
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "DiziBox",
+        "description": "DiziBox - yabanci dizi izleme",
+        "url": "https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/plugins/DiziBox.cs3",
+        "name": "DiziBox"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=filmboxizle.net&sz=%size%",
+        "fileHash": "sha256-eab2d3317413ba86e5c81640fbbe05c9708970b459e849e39ec86a06d8c016e5",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/beyazsapka/cs-beyaz",
+        "fileSize": 17750,
+        "status": 3,
+        "language": "tr",
+        "authors": [
+            "beyazsapka"
+        ],
+        "tvTypes": [
+            "Movie"
+        ],
+        "version": 2,
+        "internalName": "FilmBoxIzle",
+        "description": "FilmBoxIzle - Turkce dublajli film izleme",
+        "url": "https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/plugins/FilmBoxIzle.cs3",
+        "name": "FilmBoxIzle"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=filmmakinesi.to&sz=%size%",
+        "fileHash": "sha256-5f445f3942e2f376089475a9d540ac2f599ad1b7c6e06f8856ee81573fc29d1f",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/beyazsapka/cs-beyaz",
+        "fileSize": 23324,
+        "status": 1,
+        "language": "tr",
+        "authors": [
+            "beyazsapka"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 2,
+        "internalName": "FilmMakinesi",
+        "description": "FilmMakinesi - Turkce dublaj/altyazili film ve dizi izleme",
+        "url": "https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/plugins/FilmMakinesi.cs3",
+        "name": "FilmMakinesi"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.fullhdfilmizlesene.now&sz=%size%",
+        "fileHash": "sha256-5ec18567bdfbb951358842e76bc022e888d6e4aac11388ac2f3ba9579e5e40eb",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/beyazsapka/cs-beyaz",
+        "fileSize": 20590,
+        "status": 3,
+        "language": "tr",
+        "authors": [
+            "beyazsapka"
+        ],
+        "tvTypes": [
+            "Movie"
+        ],
+        "version": 2,
+        "internalName": "FullFilmIzlesene",
+        "description": "FullHDFilmizlesene - full HD film izleme",
+        "url": "https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/plugins/FullFilmIzlesene.cs3",
+        "name": "FullFilmIzlesene"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.hdfilmcehennemi.nl&sz=%size%",
+        "fileHash": "sha256-42894b77cbd3d6d3477fe9ea443ae4c25a4f2f2ead47addb7d6af949d868ade5",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/beyazsapka/cs-beyaz",
+        "fileSize": 27645,
+        "status": 1,
+        "language": "tr",
+        "authors": [
+            "beyazsapka"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 2,
+        "internalName": "HDFilmcehennemi",
+        "description": "HDFilmCehennemi - HD film ve dizi izleme",
+        "url": "https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/plugins/HDFilmcehennemi.cs3",
+        "name": "HDFilmcehennemi"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.hdfilmizle.live&sz=%size%",
+        "fileHash": "sha256-a4496b436621489bb004883d321e3b01242f45a6c654be96bb38be99027d4f78",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/beyazsapka/cs-beyaz",
+        "fileSize": 23517,
+        "status": 1,
+        "language": "tr",
+        "authors": [
+            "beyazsapka"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "HDFilmIzle",
+        "description": "HDFilmizle - HD film ve dizi izleme",
+        "url": "https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/plugins/HDFilmIzle.cs3",
+        "name": "HDFilmIzle"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.lookmovie2.to&sz=%size%",
+        "fileHash": "sha256-94b4e5cbdcd47c944cc144a4d4dc2be803c1a4a0fbc3ac7f74da5005d5323118",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/beyazsapka/cs-beyaz",
+        "fileSize": 23334,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "beyazsapka"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 2,
+        "internalName": "LookMovie2",
+        "description": "LookMovie2 - ucretsiz film ve dizi izleme (m3u8 + altyazi)",
+        "url": "https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/plugins/LookMovie2.cs3",
+        "name": "LookMovie2"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=yabancidizi.news&sz=%size%",
+        "fileHash": "sha256-91843344fd8632ba164818ea9205b7f154d46de64d210b2941605744c4a288fd",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/beyazsapka/cs-beyaz",
+        "fileSize": 24206,
+        "status": 3,
+        "language": "tr",
+        "authors": [
+            "beyazsapka"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 2,
+        "internalName": "YabanciDizi",
+        "description": "YabanciDizi - yabanci dizi ve film izleme",
+        "url": "https://raw.githubusercontent.com/beyazsapka/cs-beyaz/master/plugins/YabanciDizi.cs3",
+        "name": "YabanciDizi"
+    }
+]
